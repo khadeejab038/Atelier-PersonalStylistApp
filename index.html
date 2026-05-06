@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier App</title>
+
+    <!-- Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Amoresa fallback -->
+    <style>
+        @font-face {
+            font-family: "Amoresa";
+            src: local("Times New Roman");
+        }
+    </style>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: linear-gradient(135deg, #f8f9fb, #eef1f5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        h1 {
+            font-family: "Amoresa", serif;
+            font-size: 42px;
+            margin-bottom: 6px;
+            color: #222;
+            letter-spacing: 0.5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            font-weight: 400;
+            color: #777;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            width: 100%;
+            padding: 14px;
+            background: #111;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .button:hover {
+            background: #333;
+        }
+
+        .note {
+            margin-top: 18px;
+            font-size: 13px;
+            color: #888;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 480px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1>Atelier</h1>
+            <h3 class="subtitle">Personal Stylist App</h3>
+            <p class="description">Download the latest version of the app</p>
+
+            <a class="button" href="public/atelier-app.apk">
+                Download APK
+            </a>
+
+            <div class="note">
+                Android only • Enable “Install unknown apps”
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
